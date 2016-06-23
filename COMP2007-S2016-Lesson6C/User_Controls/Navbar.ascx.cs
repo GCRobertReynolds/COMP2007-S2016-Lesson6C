@@ -46,6 +46,15 @@ namespace COMP2007_S2016_Lesson6C
                 case "Contact":
                     contact.Attributes.Add("class", "active");
                     break;
+                case "Contoso Menu":
+                    menu.Attributes.Add("class", "active");
+                    break;
+                case "Login":
+                    login.Attributes.Add("class", "active");
+                    break;
+                case "Register":
+                    register.Attributes.Add("class", "active");
+                    break;
             }
         }
     }
