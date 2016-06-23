@@ -13,10 +13,10 @@ namespace COMP2007_S2016_Lesson6C.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
 
-    public partial class DefaultConnection : DbContext
+    public partial class ContosoConnection : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public ContosoConnection()
+            : base("name=ContosoConnection")
         {
         }
 

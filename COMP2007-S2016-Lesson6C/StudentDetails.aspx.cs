@@ -26,7 +26,7 @@ namespace COMP2007_S2016_Lesson6C
             int StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
 
             //Connect to the Entity Framework Database
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //Populate a student object instance with the StudentID from the URL Param
                 Student updatedStudent = (from student in db.Students
@@ -52,7 +52,7 @@ namespace COMP2007_S2016_Lesson6C
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             //Use Entity Framework to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //Use the Student model to create a new student object and
                 //Save a new record
