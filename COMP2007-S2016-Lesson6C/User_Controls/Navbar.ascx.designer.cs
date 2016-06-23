@@ -22,6 +22,15 @@ namespace COMP2007_S2016_Lesson6C {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
         
         /// <summary>
+        /// PublicPlaceholder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PublicPlaceholder;
+        
+        /// <summary>
         /// login control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace COMP2007_S2016_Lesson6C {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl register;
+        
+        /// <summary>
+        /// ContosoPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder ContosoPlaceHolder;
         
         /// <summary>
         /// menu control.

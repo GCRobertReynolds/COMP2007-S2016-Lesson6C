@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+//Required for Identity and OWN
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 
 /**
  * @author: Robert Reynolds
@@ -17,7 +21,24 @@ namespace COMP2007_S2016_Lesson6C
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SetActivePage();
+            if(!IsPostBack)
+            {
+                //Check if a user is logged in
+                if(HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    //Show the Contoso content area
+                    ContosoPlaceHolder.Visible = true;
+                    PublicPlaceholder.Visible = false;
+                }
+                else
+                {
+                    //Only show login and register
+                    ContosoPlaceHolder.Visible = false;
+                    PublicPlaceholder.Visible = true;
+                }
+                SetActivePage();
+            }
+            
         }
 
         /**
